@@ -1,5 +1,12 @@
 .et_fullwidth_nav {
 
+  &.et_fixed_nav #main-header,
+  &.et_fixed_nav #top-header {
+    @media screen and (max-width: 980px) {
+      position: fixed;
+    }
+  }
+
   .et-fixed-header#main-header {
     box-shadow: 0 0 7px rgba(0,0,0,.1)!important;
   }
@@ -46,7 +53,7 @@
         content: '';
         width: 100%;
         height: 2px;
-        top: 3rem;
+        top: 2.5rem;
       }
     }
     a {
