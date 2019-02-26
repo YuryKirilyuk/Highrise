@@ -1,0 +1,80 @@
+#main-footer {
+  @media screen and (max-width: 980px) {
+    padding-top: 2.5rem;
+  }
+
+  #et-footer-nav {
+    .container {
+      align-items: center;
+      border-bottom: 1px solid rgba(232, 233, 234, .2);
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 4.5rem;
+      @media screen and (max-width: 1400px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  #menu-footer-menu {
+    @media screen and (min-width: 1300px) {
+      margin-left: 2rem;
+      white-space: nowrap;
+    }
+    @media screen and (max-width: 739px) {
+      display: none;
+    }
+    li {
+      @media screen and (max-width: 959px) {
+        padding-right: 1.2rem;
+      }
+      a {
+        @media screen and (max-width: 959px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .logo_container {
+    position: relative;
+    text-align: center;
+    @media screen and (min-width: 981px) {
+      height: auto;
+      width: auto;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+  .bottom-nav a:hover {
+    //color: $orange;
+    color: #00b2c7;
+    opacity: 1;
+  }
+
+  .et-social-icons {
+    background: #191d27;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    margin-bottom: -7px;
+    a:hover {color: #fff;}
+  }
+
+  #footer-bottom .container {
+    padding: 6.5rem 0;
+    @media screen and (max-width: 480px) {
+      padding: 1rem 0;
+    }
+  }
+  #footer-info {
+    float: none;
+    font-weight: 300;
+    text-align: right;
+    @media screen and (max-width: 375px) {
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+}//#main-footer

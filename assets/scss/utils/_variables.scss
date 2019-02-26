@@ -1,0 +1,43 @@
+//* colors */
+
+$white: #fff;
+$dark: #0d1319;
+$blue: #19aabc;
+$blue-dark: #272e3d;
+$orange: #de5f00;
+$orange-text: #ea6950;
+$red: #df2f4a;
+$icon-red: #f74236;
+$green: #1C6E5C;
+$grey: #a4acb8;
+$grey-dark: #404250;
+$grey-light: rgba(28,110,92,.05);
+
+$main-color: $dark;
+$link-color: #01a2b6;
+
+//* main variables */
+
+$min-width: 320px;
+$max-width: 1308px;
+$base-bg: $white;
+$base-font-size: 1.7rem;
+$mobile-font-size: 1.4rem;
+$base-line-height: 2.6rem;
+$base-font-family: 'Gotham', sans-serif;
+//$custom-font-family: 'Roboto', sans-serif;
+
+//text, titles
+$text-color: $dark;
+$title-color: $dark;
+$title-font-family: 'Antonio', serif;
+$title-font-weight: 700;
+
+
+$headerHeight: 7.2rem;
+$headerHeightMobile: 7.2rem;
+$footerHeight: 7rem;
+
+$default-transition: all .2s linear;
+
+@media screen and (max-width: 980px) {}
