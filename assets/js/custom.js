@@ -18,6 +18,21 @@
 	});
 
 
+    jQuery(window).on('load', function() {
+
+        if(!(jQuery(document.body).hasClass('home'))) {
+            jQuery('#top-menu').find('a').each(function(){
+                var link = jQuery(this);
+                    href = link.attr('href');
+
+                if(!(jQuery(href).length)) {
+                    link.attr('href', '/' + href);
+                }
+            });
+        }
+    });
+
+
 function scrollSections() {
     var offset = getSections();
 
