@@ -1,0 +1,99 @@
+.section-posts {
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.52;
+  padding-top: 0;
+  overflow: hidden;
+
+  .post {
+    margin-bottom: 0;
+    padding-bottom: 6rem;
+    padding-top: 6.5rem;
+    @media screen and (min-width: 981px) {
+      padding-left: 23rem;
+    }
+    @media screen and (max-width: 980px) {
+      padding-top: 4.5rem;
+    }
+    &:nth-child(even):before {
+      background: #f7f8f8;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 300%;
+      left: -100%;
+      z-index: -1;
+    }
+  }//.post
+
+  .entry-title {
+    border-bottom: 1px solid $blue;
+    color: #0d1319;
+    font-size: 2.8rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    &:before {
+      background-image: linear-gradient(to right, $orange-text 75px, #f7f8f8 0 );
+      bottom: -2px;
+      content: '';
+      height: 3px;
+      left: 0;
+      position: absolute;
+      width: 9.4rem;
+    }
+    @media screen and (max-width: 980px) {
+      font-size: 2.4rem;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 2rem;
+    }
+    a {pointer-events: none;}
+  }//.entry-title
+
+  .post-meta {
+    background: #0596aa;
+    font-size: 1.6rem;
+    height: 3.7rem;
+    left: 0;
+    line-height: 3.7rem;
+    margin-bottom: 3rem;
+    top: 7rem;
+    text-align: center;
+    width: 17rem;
+    @media screen and (min-width: 981px) {
+      position: absolute;
+    }
+    .published {
+      color: #fff;
+      font-weight: normal;
+    }
+  }//.post-meta
+
+  .post-content {
+    color: #000;
+  }
+
+
+  ul.custom-list {
+    list-style: none;
+    margin-top: 2.5rem;
+    padding: 0;
+    li {
+      margin-bottom: 2.5rem;
+      @media screen and (min-width: 581px) {
+        display: flex;
+      }
+      span:first-child {
+        display: block;
+        font-weight: 700;
+        flex-shrink: 0;
+        width: 12.5rem;
+      }
+    }
+  }
+
+}//.section-posts
