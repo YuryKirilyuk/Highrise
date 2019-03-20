@@ -19,6 +19,7 @@
 ?>
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <link rel="shortcut icon" href="/favicon.ico">
 
 	<script type="text/javascript">
 		document.documentElement.className = 'js';

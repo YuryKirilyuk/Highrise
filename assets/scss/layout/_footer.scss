@@ -6,7 +6,7 @@
   #et-footer-nav {
     .container {
       align-items: center;
-      border-bottom: 1px solid rgba(232, 233, 234, .2);
+      //border-bottom: 1px solid rgba(232, 233, 234, .2);
       display: flex;
       justify-content: space-between;
       padding: 0 0 4.5rem;
@@ -55,15 +55,19 @@
 
   .et-social-icons {
     background: #191d27;
-    position: absolute;
+    float: none;
+    //position: absolute;
+    position: relative;
     right: 0;
     bottom: 100%;
     margin-bottom: -7px;
+    text-align: center;
+    .et-social-icon:first-child {margin-left: 0;}
     a:hover {color: #fff;}
   }
 
   #footer-bottom .container {
-    padding: 6.5rem 0;
+    padding: 2.5rem 0;
     @media screen and (max-width: 480px) {
       padding: 1rem 0;
     }
@@ -71,7 +75,7 @@
   #footer-info {
     float: none;
     font-weight: 300;
-    text-align: right;
+    text-align: center;
     @media screen and (max-width: 375px) {
       font-size: 1.4rem;
       text-align: center;

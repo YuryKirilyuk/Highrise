@@ -123,12 +123,25 @@
 
 .section-jobs-list {
   @extend .section-services-list;
-  padding-bottom: 8rem !important;
+  padding-bottom: 5rem !important;
   padding-top: 2.5rem !important;
+
+  > .et_pb_row {
+    .et_pb_column {
+      &:not(:first-child) {
+        @media screen and (min-width: 981px) {
+          padding-bottom: 0;
+        }
+      }
+    }//.et_pb_column
+  }//et_pb_row
 
   ul {
     padding-left: 0;
-  }
+    a {
+      &:hover {color: #DE5E06;}
+    }
+  }//ul
 
   .et_pb_row {
     @media screen and (max-width: 425px) {
